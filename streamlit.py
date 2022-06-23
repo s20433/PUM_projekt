@@ -6,9 +6,6 @@ import streamlit as st
 from fastai.vision.all import *
 from fastai.vision.widgets import *
 
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
-
 class Predict:
     def __init__(self):
         self.learn_inference_1 = load_learner(Path()/"model_1.sv")
