@@ -7,8 +7,6 @@ import streamlit as st
 temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 
-learn_inf = load_learner('model_1.sv')
-
 class Predict:
     def __init__(self):
         self.learn_inference_1 = load_learner(Path()/"model_1.sv")
